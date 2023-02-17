@@ -1,0 +1,115 @@
+/**Common css starts here*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/**Common css end here*/
+
+/**nav sections starts here*/
+
+nav{
+    background-color: #9e8282;
+    width:850px;
+    margin:auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+nav ul{
+    text-align:left;
+}
+nav ul li{
+    display: inline-block;
+    position:relative;
+}
+nav ul li:hover> a{
+    background-color:black;
+    color:white;
+}
+nav ul li a{
+    color:black;
+    padding:15px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+     transition: 0.5s;
+}
+/**Sub-Menu starts here*/
+/* without class submenu start */
+/* nav ul li ul{
+    position: absolute;
+    background-color: brown;
+    width:210px;
+    text-align: left;
+    opacity:0;
+    visibility:hidden;
+}
+nav ul li:hover ul li ul{
+    opacity:1;
+    visibility: visible;
+}
+nav ul li ul li{display: block;}
+nav ul li ul li a {
+    border-bottom: 1px solid black;
+    display:block;
+} */
+/* without class submenu end */
+nav .submenu{
+    font-weight: 400;
+    position: absolute;
+    background-color:#9e8282;
+    min-width:100%;
+    
+    margin:40px;
+    text-align: left;
+    opacity:0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+nav ul li:hover>.submenu{
+    margin:0;
+    opacity:1;
+    visibility:visible;
+    background-color:#9e8282;
+}
+nav .submenu li{
+    display:block;
+}
+nav .submenu li a{
+    border-bottom: 1px solid #aaa;
+    display:block;
+    transition:0.5s;
+}
+nav .submenu li:hover>a{
+    margin:5px;
+    background-color: black;
+}
+nav .submenu .submenu{
+   
+    left:100%;
+    top:0;
+  
+}
+nav .menu-item{
+   min-width: 100%;
+}
+
+
+nav .menu-item li a{
+    text-transform: capitalize;
+}
+/* nav section end */
+/* image style */
+.image-style{
+    width:850px;
+    margin: auto;
+    display:block;
+}
